@@ -6,17 +6,13 @@ export default class RadioStations extends Component {
     super(props);
     this.state = {
       isWindowOpen: false,
-      word: "",
-      image_path: "",
       isClicked: false,
     };
   }
-  onSelectHandler = () => {
+  onSelectHandler = (index) => {
     this.setState({
       isWindowOpen: true,
-      word: "selected",
-      isClicked: true,
-      image_path: "",
+      selectedIndex: index,
     });
   };
 
@@ -29,11 +25,15 @@ export default class RadioStations extends Component {
           <ul>
             {radios.map((radio, index) => {
               return (
-                <li onClick={this.onSelectHandler}>
+                <li
+                  onClick={() => {
+                    this.onSelectHandler(index);
+                  }}
+                >
                   {radio.name}
                   <span>{radio.frequency}</span>
-                  {this.state.isClicked === true ? (
-                    <img src={radio.image} />
+                  {this.state.selectedIndex === index ? (
+                    <img src={radio.image} className="image" />
                   ) : null}
                 </li>
               );
