@@ -6,7 +6,7 @@ import RadioStations from "./Components/Radiostations";
 function App() {
   return (
     <div className="App">
-      <RadioStations />
+      <RadioStations station="" band="" />
     </div>
   );
 }
