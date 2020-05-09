@@ -1,0 +1,35 @@
+.stations-container {
+  width: 300px;
+  background-color: black;
+  border-radius: 5%;
+  margin: 0 auto;
+  margin-top: 30px;
+  opacity: 70%;
+}
+.header {
+  background-color: orange;
+  border-radius: 5%;
+  padding: 10px;
+}
+.stations li {
+  color: gray;
+  list-style: none;
+  border-bottom: grey 1px solid;
+  padding: 5px;
+}
+.stations li span {
+  color: gray;
+  list-style: none;
+  padding: 15px;
+  margin: 10px;
+  font-size: 1.4em;
+}
+.stations-band {
+  display: flex;
+
+  padding: 10px;
+}
+.footer {
+  border: grey 1px solid;
+  height: 30px;
+}
