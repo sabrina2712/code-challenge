@@ -1,24 +1,45 @@
-.stations-container {
+body {
+  margin: auto 0;
+  background-color: #2c3e50;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
   width: 300px;
+  margin-top: 20px;
+}
+.dark-background {
   background-color: black;
-  border-radius: 5%;
-  margin: 0 auto;
-  margin-top: 30px;
   opacity: 70%;
 }
+
 .header {
   background-color: orange;
-  border-radius: 5%;
-  padding: 10px;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  color: white;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 .stations li {
-  color: gray;
+  color: #95a5a6;
   list-style: none;
   border-bottom: grey 1px solid;
   padding: 5px;
 }
 .stations li span {
-  color: gray;
+  color: #95a5a6;
   list-style: none;
   padding: 15px;
   margin: 10px;
@@ -26,15 +47,78 @@
 }
 .stations-band {
   display: flex;
-  color: white;
+  color: #95a5a6;
   padding: 10px;
 }
 .footer {
-  border: grey 1px solid;
-  height: 30px;
+  color: #95a5a6;
+
+  padding-bottom: 30px;
+  background-color: black;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  box-shadow: 0px 26px 19px -19px rgba(0, 0, 0, 0.75);
 }
 
+.name {
+  font-size: 1.4em;
+}
 .image {
-  width: 80px;
+  width: 150px;
   border-radius: 50%;
+  margin: 10px 20px 10px 20px;
+  border: 3px solid #f5f5f6;
+}
+.frequency {
+  font-size: 1.4em;
+}
+.stations-band ul {
+  list-style: none;
+  width: 100%;
+}
+.stations-band ul li {
+  border-bottom: 1px solid grey;
+}
+.sign {
+  font-size: 1.6em;
+  padding: 0px;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #95a5a6;
+  border-radius: 50%;
+  text-align: center;
+}
+.station-detail {
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+}
+.footer-title {
+  text-transform: uppercase;
+  color: orange;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+.footer-current {
+  font-size: 1.4em;
+}
+
+.station-row {
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.selected {
+  flex-direction: column !important;
+}
+
+ul {
+  padding: 0px;
+}
+.station-info {
+  display: flex;
+  justify-content: space-between;
 }
